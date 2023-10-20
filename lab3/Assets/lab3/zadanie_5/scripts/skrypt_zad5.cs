@@ -24,10 +24,10 @@ public class skrypt_zad5 : MonoBehaviour
                         )
                     )
                 ) {
+                Debug.Log("Nast¹pi³a kolizja: nie mo¿na utworzyæ obiektu na wspó³rzêdnych (" + randomXPoint + ", 0.5, " + randomZPoint + ")" );
                 randomXPoint = Random.Range(0.5f, plateSize - 0.5f);
                 randomZPoint = Random.Range(0.5f, plateSize - 0.5f);
 
-                Debug.Log("Nast¹pi³a kolizja");
             }
 
             Instantiate(randomObject, new Vector3(randomXPoint, 0.5f, randomZPoint), Quaternion.identity);
