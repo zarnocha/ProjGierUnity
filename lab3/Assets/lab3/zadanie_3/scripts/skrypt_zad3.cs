@@ -6,10 +6,7 @@ public class skrypt_zad3 : MonoBehaviour
 {
     public int speed = 10;
     private int distance = 10;
-    private int direction_x = 0;
-    private int direction_z = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         // transform.position = new Vector3(0, 0, 0);
@@ -23,7 +20,7 @@ public class skrypt_zad3 : MonoBehaviour
         
         float width = transform.GetChild(0).GetComponent<Renderer>().transform.lossyScale.x;
 
-        if (zPosition +width < distance && xPosition - width <= 0)
+        if (zPosition + width < distance && xPosition - width <= 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
